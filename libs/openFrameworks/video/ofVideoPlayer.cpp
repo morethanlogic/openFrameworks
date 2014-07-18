@@ -215,6 +215,12 @@ void ofVideoPlayer::setVolume(float volume){
 	}
 }
 
+//--------------------------------------------------------
+void ofVideoPlayer::setPan(float pan){
+	if( player != NULL ){
+		player->setPan(pan);
+	}
+}
 
 //--------------------------------------------------------
 void ofVideoPlayer::setLoopState(ofLoopType state){

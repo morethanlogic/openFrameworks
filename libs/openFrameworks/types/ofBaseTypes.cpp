@@ -85,6 +85,11 @@ void ofBaseVideoPlayer::setVolume(float volume){
 }
 
 //---------------------------------------------------------------------------
+void ofBaseVideoPlayer::setPan(float pan){
+	ofLogWarning("ofBaseVideoPlayer") << "setPan() not implemented";
+}
+
+//---------------------------------------------------------------------------
 void ofBaseVideoPlayer::setLoopState(ofLoopType state){
 	ofLogWarning("ofBaseVideoPlayer") << "setLoopState() not implemented";
 }

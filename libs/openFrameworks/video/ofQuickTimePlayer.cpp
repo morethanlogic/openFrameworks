@@ -499,6 +499,23 @@ void ofQuickTimePlayer::setVolume(float volume){
 
 }
 
+//--------------------------------------------------------
+void ofQuickTimePlayer::setPan(float pan){
+	if( !isLoaded() ){
+		ofLog(OF_LOG_ERROR, "ofQuickTimePlayer: movie not loaded!");
+		return;
+	}
+	
+	//--------------------------------------
+    #ifdef OF_VIDEO_PLAYER_QUICKTIME
+	//--------------------------------------
+    SetMovieAudioBalance(moviePtr, pan, 0);
+    
+	//--------------------------------------
+    #endif
+	//--------------------------------------
+    
+}
 
 //--------------------------------------------------------
 void ofQuickTimePlayer::setLoopState(ofLoopType state){

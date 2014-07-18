@@ -48,6 +48,8 @@ class ofQuickTimePlayer : public ofBaseVideoPlayer{
 
 		 void 			setPosition(float pct);
 		 void 			setVolume(float volume);
+         void 			setPan(float pan);
+
 		 void 			setLoopState(ofLoopType state);
 		 void   		setSpeed(float speed);
 		 void			setFrame(int frame);  // frame 0 = first frame...
